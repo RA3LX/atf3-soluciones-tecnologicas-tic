@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 1 - Encuesta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Encuesta: ¿Qué le pareció la película?</h2>
+  <form id="encuesta">
+    <label><input type="radio" name="opinion" value="bueno"> Bueno</label><br>
+    <label><input type="radio" name="opinion" value="regular"> Regular</label><br>
+    <label><input type="radio" name="opinion" value="malo"> Malo</label><br><br>
+
+    <button type="button" onclick="enviar()">Enviar</button>
+    <button type="button" onclick="verResultados()">Ver porcentajes</button>
+  </form>
+
+  <h3>Resultados:</h3>
+  <div id="resultados"></div>
+    <script src="script.js"></script>
+
+</body>
+</html>
